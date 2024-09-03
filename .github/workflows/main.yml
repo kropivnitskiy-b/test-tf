@@ -106,12 +106,6 @@ jobs:
 
             </details>
             #### Checkov 🧪\`${{ steps.checkov.outcome }}\`
-      
-            <details><summary>Show Plan</summary>
-          
-            \`\`\`${process.env.PLAN}\`\`\`
-          
-            </details>
 
             <details><summary>Show Checkov Results</summary>
 
