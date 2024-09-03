@@ -53,6 +53,7 @@ jobs:
         run: terraform validate -no-color
 
       - name: Checkov GitHub Action
+        id: checkov
         uses: bridgecrewio/checkov-action@v12
         with:
           # This will add both a CLI output to the console and create a results.sarif file
