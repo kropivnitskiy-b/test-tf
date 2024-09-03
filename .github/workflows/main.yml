@@ -105,6 +105,19 @@ jobs:
             \`\`\`
 
             </details>
+            #### Checkov 🧪\`${{ steps.checkov.outcome }}\`
+      
+            <details><summary>Show Plan</summary>
+          
+            \`\`\`${process.env.PLAN}\`\`\`
+          
+            </details>
+
+            <details><summary>Show Checkov Results</summary>
+
+            ${process.env.CHECKOV_RESULTS}
+
+            </details>
 
             *Pushed by: @${{ github.actor }}, Action: \`${{ github.event_name }}\`*`;
 
