@@ -96,15 +96,7 @@ jobs:
             \`\`\`
 
             </details>
-
-            #### Terraform Plan 📖\`${{ steps.plan.outcome }}\`
-
-            <details><summary>Show Plan</summary>
-
-            \`\`\`\n
-            ${process.env.PLAN}
-            \`\`\`
-
+            
             </details>
             
             #### Checkov 🧪\`${{ steps.checkov.outcome }}\`
@@ -116,6 +108,14 @@ jobs:
             \`\`\`
             
             </details>
+
+            #### Terraform Plan 📖\`${{ steps.plan.outcome }}\`
+
+            <details><summary>Show Plan</summary>
+
+            \`\`\`\n
+            ${process.env.PLAN}
+            \`\`\`
 
             *Pushed by: @${{ github.actor }}, Action: \`${{ github.event_name }}\`*`;
 
